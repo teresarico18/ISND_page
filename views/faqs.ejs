@@ -1,0 +1,37 @@
+<%- include("./partials/header"); %>
+
+<div class="uk-width-3-4 uk-align-center" ukgrid>
+	<div>
+		<ul class="uk-breadcrumb">
+			<li><a href="index.html">Inicio</a></li>
+			<li class="uk-disabled"><a>Preguntas Frecuentes</a></li>
+		</ul>
+	</div>
+	<div class="uk-container-large  uk-comment-primary">
+		<h1 class="uk-article-title">
+			<a class="uk-link-reset" href="">Preguntas Frecuentes</a>
+		</h1>
+		<ul uk-accordion="multiple: true">
+			<li class="uk-open">
+				<a class="uk-accordion-title" href="#">Pregunta 1</a>
+				<div class="uk-accordion-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</li>
+			<li>
+				<a class="uk-accordion-title" href="#">Pregunta 2</a>
+				<div class="uk-accordion-content">
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+				</div>
+			</li>
+			<li>
+				<a class="uk-accordion-title" href="#">Pregunta 3</a>
+				<div class="uk-accordion-content">
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<%- include("./partials/footer"); %>

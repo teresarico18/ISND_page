@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISND IEST Anáhuac</title>
+	<meta charset="UTF-8"/>
+	<link rel="icon" type="image/png"  href="https://i.imgur.com/fChZqWY.png">
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+	<script src="uikit/dist/js/uikit-icons.min.js"></script>
+
+</head>
+<body class="">
+
+	<div>
+		<!-- GRID-->
+		<!-- uk-grid: todos los elementos se va a declarar la rejilla-->
+		<!-- si poners clas="" es pq no vas a usar js-->
+		<header class="uk-width-1-1">
+				<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+				    <nav class="uk-navbar-container uk-container uk-container-expand uk-background-secondary" uk-navbar>
+				    	<div class="uk-navbar-left">
+					        <ul class="uk-navbar-nav">
+					            <li class="uk-active "><a href="/"><img src="https://i.imgur.com/0DGSyhj.png" width="80"></a>
+					            </li>
+					        </ul>
+					    </div>
+
+					    <div class="uk-navbar-center">
+					    	<ul class="uk-navbar-nav uk-visible@m">
+					            <li>
+					                <a class="uk-button uk-button-text" href="oferta">Oferta Académica</a>
+					                <!-- <div class="uk-navbar-dropdown">
+					                    <ul class="uk-nav uk-navbar-dropdown-nav">
+					                        <li><a  href="oferta.html">Oferta Academica</a></li>
+					                        <li><a href="plan.html">Plan de Estudios</a></li>
+					                        <li><a href="campo.html">Campo Laboral</a></li>
+					                    </ul>
+					                </div> -->
+					            </li>
+					           <!-- <li><a class="uk-button uk-button-text" href="#">Alumnos</a></li> -->
+					            <li><a class="uk-button uk-button-text" href="#">Proyectos</a></li>
+					            <li><a class="uk-button uk-button-text" href="noticias">Noticias</a></li>
+					            <li><a class="uk-button uk-button-text" href="faqs">FAQ's</a></li>
+					             <li><a class="uk-button uk-button-text" href="contacto">Contacto</a></li>
+					        </ul>
+					    </div>
+					    <div class="uk-navbar-right">
+					    	<a class="uk-navbar-toggle uk-hidden@m" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+						 
+					    </div>
+					</nav>
+				</div>
+
+				<div id="offcanvas-nav" uk-offcanvas="flip: true">
+					<div class="uk-offcanvas-bar">
+						<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+				            <li class="">
+				                <a class="uk-text-uppercase" href="oferta">Oferta Académica</a>
+			                    <!-- <ul class="uk-navb-sub">
+			                        <li><a href="oferta.html">Oferta Academica</a></li>
+			                        <li><a href="plan.html">Plan de Estudios</a></li>
+			                        <li><a href="campo.html">Campo Laboral</a></li>
+			                        <br>
+			                    </ul> -->
+				            </li>
+				            <!--<li class=""><a class="uk-button uk-button-text uk-text-left" href="#">Alumnos</a></li>-->
+				            <li ><a class="uk-button uk-button-text uk-text-left" href="#">Proyectos</a></li>
+				            <li ><a class="uk-button uk-button-text uk-text-left" href="noticias">Noticias</a></li>
+				            <li ><a class="uk-button uk-button-text uk-text-left" href="faqs">FAQ's</a></li>
+				            <li><a class="uk-button uk-button-text uk-text-left" href="contacto">Contacto</a></li>
+				        </ul>
+						
+					</div>
+				</div>
+			</header>

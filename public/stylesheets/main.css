@@ -1,0 +1,40 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+h2, h3, h4{
+	font-family: 'Zilla Slab', serif;
+}
+nav.uk-navbar-container.uk-background-secondary{
+	background-color: #FF5A00;
+	color: white;
+
+}
+.bg-image{
+	width: 100%;
+	padding-top: 25%;
+	background: url('https://i.imgur.com/NyJioEL.jpg') no-repeat center;
+	background-size: cover;
+}
+.uk-navbar-nav>li>a{
+	color: white;
+	font-family: 'Zilla Slab', serif;
+	font-size: 1.1em;
+	text-decoration: bold;
+	text-transform: none;
+}
+.uk-navbar-toggle{
+	color:white;
+}
+.uk-text-lead{
+	font-family: 'Zilla Slab', serif;
+}
+.uk-button .uk-button-text{
+	font-family: 'Roboto', sans-serif;
+}
+.full-height {
+    height: 100%;
+}
+#banner{
+	max-width: 100%;
+	margin: 0 auto;
+}
