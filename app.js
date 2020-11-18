@@ -28,8 +28,13 @@ app.get('/faqs', function(req, res) {
     res.render('faqs');
 });
 
+
 app.get('/contacto', function(req, res) {
     res.render('contacto');
+});
+
+app.get('/otro', function(req, res) {
+    res.render('otro');
 });
 
 app.listen(3030, function() { 
