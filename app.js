@@ -36,6 +36,9 @@ app.get('/contacto', function(req, res) {
 app.get('/otro', function(req, res) {
     res.render('otro');
 });
+app.get('/otra', function(req, res) {
+    res.render('otra');
+});
 
 app.listen(3030, function() { 
     console.log("Server Listening...");
