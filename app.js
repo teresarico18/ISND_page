@@ -8,10 +8,11 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 // index page
 
+
+/**PROBANDO LIVE SHARE, ESTO ESTÁ MUY COOL!!!!!!!!!!! :D */
 app.get('/', function(req, res) {
     res.render('index');
 });
-
 app.get('/oferta', function(req, res) {
     res.render('oferta');
 });
