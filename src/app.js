@@ -4,13 +4,9 @@ const routes = require("./routes.js");
 const app = express();
 
 const PORT = process.env.PORT || 8080;
-/*EXAMPLE using module.exports*/
-const x = require("./exampleES6");
-console.log(x);
-
 // set the view engine to ejs
 app.set("view engine", "ejs");
-
+app.use(express.static(__dirname + "../../public"));
 app.use(routes);
 
 app.listen(PORT, function () {
