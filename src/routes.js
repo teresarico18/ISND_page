@@ -4,35 +4,28 @@ const routes = express.Router();
 
 routes.use(express.static(__dirname + "/public"));
 // index page
-
-routes.get("/", function (req, res) {
+routes.get("/", (req, res) => {
+  // use res.render to load up an ejs view file
   res.render("index");
 });
-routes.get("/oferta", function (req, res) {
-  res.render("oferta");
-});
+/**     USING ROUTING PARAMETERS */
+/* Instead of using:
+    req.params("/events",(req,res)=>{...})
+    req.params("/news",(req,res)=>{...})
 
-routes.get("/noticias", function (req, res) {
-  res.render("noticias");
+  We use routing parameters:
+    routes.get("/:route", (req, res) => {
+        //We get the value of route and render that ejs file
+    const route = req.params.route;
+    console.log(route);
+    res.render(`${route}`);
 });
-
-routes.get("/articulo", function (req, res) {
-  res.render("articulo");
-});
-
-routes.get("/faqs", function (req, res) {
-  res.render("faqs");
-});
-
-routes.get("/contacto", function (req, res) {
-  res.render("contacto");
-});
-
-routes.get("/otro", function (req, res) {
-  res.render("otro");
-});
-routes.get("/otra", function (req, res) {
-  res.render("otra");
+ 
+ */
+routes.get("/:route", (req, res) => {
+  const route = req.params.route;
+  console.log(route);
+  res.render(`${route}`);
 });
 
 module.exports = routes;
