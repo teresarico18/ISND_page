@@ -1,0 +1,10 @@
+# Delete nodemodules
+./node_modules
+/node_modules/
+node_modules/
+
+# Delete dotenv
+.env
+/.env
+.env/
+./env
