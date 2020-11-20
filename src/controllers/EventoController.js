@@ -14,7 +14,7 @@ const Evento = require("../models/Evento.js");
 
 module.exports = {
   async createEvent(req, res) {
-    const { titulo, fecha, extracto, image } = req.body;
+    const { titulo, fecha, extracto, imagen } = req.body;
 
     //02-02-2020
     //TODO : FORMAT DATE
@@ -22,7 +22,7 @@ module.exports = {
       titulo,
       fecha,
       extracto,
-      image,
+      imagen,
     });
 
     return res.render("index");

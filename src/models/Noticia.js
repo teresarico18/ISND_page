@@ -10,7 +10,7 @@ const NoticiaSchema = new mongoose.Schema({
   },
   extracto: String,
   texto: String,
-  image: String,
+  imagen: String,
 });
 
 module.exports = mongoose.model("Noticia", NoticiaSchema);

@@ -8,7 +8,7 @@ const EventoSchema = new mongoose.Schema({
     año: Number,
   },
   extracto: String,
-  image: String,
+  imagen: String,
 });
 
 module.exports = mongoose.model("Evento", EventoSchema);

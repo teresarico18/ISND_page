@@ -1,0 +1,36 @@
+<%- include("../partials/header"); %>
+
+<div class="uk-width-3-4 uk-align-center" ukgrid>
+	<div class="uk-container-large  uk-comment-primary">
+		<h1>Crear Noticia</h1>
+		<form class="uk-form-stacked" action="/event" method="POST">
+			<div class="uk-margin-bottom">
+				<label class="uk-text-normal">Título</label>
+				<input class="uk-input uk-margin-small-top" type="text" name="titulo" placeholder="Titulo del evento" required>
+            </div>
+            <div class="uk-margin-bottom">
+				<label class="uk-text-normal">Autor</label>
+				<input class="uk-input uk-margin-small-top" type="text" name="autor" placeholder="Autor" required>
+			</div>
+			<div class="uk-margin-bottom">
+				<label class="uk-text-normal">Fecha</label>
+                <input class="uk-input uk-margin-small-top" type="date" name="mes" required>
+			</div>
+			<div class="uk-margin-bottom">
+				<label class="uk-text-normal">Extracto</label>
+				<textarea class="uk-textarea uk-margin-small-top" type="text" name="extracto" placeholder="Pequeño parrafo para describir el evento..." required></textarea>
+            </div>
+            <div class="uk-margin-bottom">
+				<label class="uk-text-normal">Texto</label>
+				<textarea class="uk-textarea uk-margin-small-top" type="text" name="mensaje" placeholder="Texto completo..." required></textarea>
+			</div>
+            <div class="uk-margin-bottom">
+				<label class="uk-text-normal">Imagen</label>
+				<input class="uk-textarea uk-margin-small-top" type="url" name="imagen" placeholder="Link a la imagen del evento" required>
+            </div>
+			<button class="uk-button uk-align-center" type="submit">Enviar</button>
+		</form>
+	</div>
+</div>
+
+<%- include("../partials/footer"); %>
