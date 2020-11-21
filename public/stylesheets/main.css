@@ -15,13 +15,6 @@ nav.uk-navbar-container.uk-background-secondary{
 	background: url('https://i.imgur.com/NyJioEL.jpg') no-repeat center;
 	background-size: cover;
 }
-.uk-navbar-nav>li>a{
-	color: white;
-	font-family: 'Zilla Slab', serif;
-	font-size: 1.1em;
-	text-decoration: bold;
-	text-transform: none;
-}
 .uk-navbar-toggle{
 	color:white;
 }
@@ -33,6 +26,16 @@ nav.uk-navbar-container.uk-background-secondary{
 }
 .full-height {
     height: 100%;
+}
+.uk-tab>.uk-active>a{
+	border-color:#FF5A00;
+}
+.uk-navbar-nav>li>a{
+	color: white;
+	font-family: 'Zilla Slab', serif;
+	font-size: 1.1em;
+	text-decoration: bold;
+	text-transform: none;
 }
 #banner{
 	max-width: 100%;
