@@ -1,0 +1,341 @@
+<%- include("./partials/header"); %>
+
+<div>
+	<div class="uk-text-center uk-grid-collapse uk-grid-match" uk-grid>
+		<div class="uk-width-1-4@m">
+			<div class="uk-card uk-card-body">
+				<ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+				<li><a href="#">Oferta Académica</a></li>
+				<li><a href="#">Materias</a></li>
+				<li><a href="#">Egresados</a></li>
+				<li><a href="#">Pruebas</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="uk-width-3-4@m">
+			<ul id="component-tab-left" class="uk-switcher">
+				<li class="uk-padding">
+					<!--<div class="uk-text-left">
+						<ul class="uk-breadcrumb">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a class="uk-disabled">Sobre Nosotros</a></li>
+							<li class="uk-disabled"><a>Oferta Academica</a></li>
+						</ul>
+					</div>-->
+					<article class="uk-article uk-text-left">
+
+						<h1 class="uk-article-title"><a class="uk-link-reset" href="">Oferta Académica</a></h1>
+
+						<p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+							<ul class="uk-slideshow-items">
+								<li>
+									<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="900" height="600" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+								</li>
+								<li>
+									<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="900" height="600" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+								</li>
+								<li>
+									<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="900" height="600" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+								</li>
+							</ul>
+						
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+						
+						</div>
+
+					</article>
+				</li>
+				<li class="uk-padding">
+
+					<article class="uk-article uk-text-left">
+
+						<h1 class="uk-article-title"><a class="uk-link-reset" href="">Materias</a></h1>
+
+						<p class="uk-text-lead">Para ofrecer la mejor formación a nuestros alumnos, buscamos brindar siempre las materias más fundamentales e innovadoras, con el objeitvo de prepararlos para todas las necesidades laborales actuales.</p>
+
+						<p>Algunas de las materias que ofrecemos son:</p>
+
+						<h3>Programación, Redes, Innovación Tecnológica</h3>
+						<div uk-slider="sets: true;">
+							<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="1">
+								<ul class="uk-slider-items uk-child-width-1-5@s uk-grid uk-grid-small" >
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Introducción a los Sistemas y Negocios Digitales</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Algoritmos y Programación</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Lenguajes Orientados a Objetos</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Estructuras de datos</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Ingeniería de Software</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Redes de Computadoras</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Realidad Virtual y Aumentada</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Bases de datos</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Desarrollo de Aplicaciones Web</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Seguridad Informática de Redes Forenses</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Programación de Dispositivos móviles.</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Inteligencia Artificial</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Aprendizaje Maquina</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+								</ul>
+								<a class="uk-position-center-left dark-arrows" id="arrows" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+								<a class="uk-position-center-right dark-arrows" id="arrrows" href="#" uk-slidenav-next uk-slider-item="next"></a>
+							</div>
+							<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+						</div>
+						
+						<h3>Negocios Digitales y Administración</h3>
+						<div uk-slider="sets: true;">
+							<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="1">
+								<ul class="uk-slider-items uk-child-width-1-5@s uk-grid uk-grid-small" >
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Introducción a la empresa</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Gestión de Negocios Digitales</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Legislación Informática</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Mercadotecnia de Negocios Digitales</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Contabilidad y Costos para Ingeniería</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Tratamiento estadístico de la Información</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Ingeniería Económica</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+									<li>
+										<div class="uk-card uk-card-default uk-card-small uk-card-body uk-text-left">
+											<h4 class="uk-card-title uk-text-small uk-text-bold">Planeación Estratégica</h4>
+											<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</li>
+								</ul>
+								<a class="uk-position-center-left dark-arrows" id="arrows" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+								<a class="uk-position-center-right dark-arrows" id="arrows" href="#" uk-slidenav-next uk-slider-item="next"></a>
+							</div>
+							<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+						</div>
+
+					</article>
+				</li>
+				<li class="uk-padding">
+
+					<article class="uk-article uk-text-left">
+
+						<h1 class="uk-article-title"><a class="uk-link-reset" href="">Egresados</a></h1>
+
+						<p class="uk-text-lead">Creemos que la mejor forma de demostrar nuestra capacidad de formar grandes Ingenieros en Sistemas es a través de los casos de éxito de nuestros graduados.</p>
+
+						<p>Nuestros egresados son capaces de iniciar su propia empresa, consultoría u obtener un puesto como desarrollador en grandes empresas.</p>
+
+						<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true;">
+
+							<ul class="uk-slider-items uk-grid">
+								<li class="uk-width-4-5">
+									<div class="uk-panel">
+										<img src="https://www.anahuac.mx/generacion-anahuac/sites/default/files/styles/medium/public/articles/david_montiel.jpeg?itok=IlkzNmkh" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">David Montiel</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>
+								<li class="uk-width-4-5">
+									<div class="uk-panel">
+										<img src="https://www.anahuac.mx/generacion-anahuac/sites/default/files/styles/medium/public/articles/david_montiel.jpeg?itok=IlkzNmkh" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>
+								<li class="uk-width-4-5">
+									<div class="uk-panel">
+										<img src="https://www.anahuac.mx/generacion-anahuac/sites/default/files/styles/medium/public/articles/david_montiel.jpeg?itok=IlkzNmkh" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>
+								<li class="uk-width-4-5">
+									<div class="uk-panel">
+										<img src="https://www.anahuac.mx/generacion-anahuac/sites/default/files/styles/medium/public/articles/david_montiel.jpeg?itok=IlkzNmkh" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>
+								<li class="uk-width-4-5">
+									<div class="uk-panel">
+										<img src="https://www.anahuac.mx/generacion-anahuac/sites/default/files/styles/medium/public/articles/david_montiel.jpeg?itok=IlkzNmkh" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+						
+						</div>
+						<!--
+						<div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+							<div class="uk-card uk-card-small uk-grid-collapse  uk-child-width-1-2@s uk-margin-small-bottom " uk-grid>
+								<div class="uk-card-media-left uk-cover-container ">
+									<img src="https://i.imgur.com/xrlyKNm.jpg" alt="" uk-cover>
+									<canvas width="300" height="200"></canvas>
+								</div>
+								<div>
+									<div class="uk-card-body uk-card-secondary">
+										<h3 class="uk-card-title">Media Left</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card uk-card-small uk-grid-collapse uk-child-width-1-2@s uk-margin-small-bottom" uk-grid>
+								<div class="uk-card-media-left uk-cover-container">
+									<img src="https://i.imgur.com/xrlyKNm.jpg" alt="" uk-cover>
+									<canvas width="300" height="200"></canvas>
+								</div>
+								<div>
+									<div class="uk-card-body">
+										<h3 class="uk-card-title">Media Left</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div>
+							</div>
+							<div class="uk-card uk-card-small uk-grid-collapse uk-child-width-1-2@s uk-margin-small-bottom" uk-grid>
+								<div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+									<img src="https://i.imgur.com/xrlyKNm.jpg" alt="" uk-cover>
+									<canvas width="300" height="200"></canvas>
+								</div>
+								<div>
+									<div class="uk-card-body">
+										<h3 class="uk-card-title">Media Right</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div>							
+							</div>
+							<div class="uk-card uk-card-small uk-grid-collapse uk-child-width-1-2@s uk-margin-small-bottom" uk-grid>
+								<div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+									<img src="https://i.imgur.com/xrlyKNm.jpg" alt="" uk-cover>
+									<canvas width="300" height="200"></canvas>
+								</div>
+								<div>
+									<div class="uk-card-body uk-card-secondary">
+										<h3 class="uk-card-title">Media Right</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+									</div>
+								</div>							
+							</div>
+						</div>	
+					-->
+
+					</article>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<%- include("./partials/noticias"); %>
+
+
+<%- include("./partials/footer"); %>

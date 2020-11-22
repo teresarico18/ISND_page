@@ -37,7 +37,11 @@ nav.uk-navbar-container.uk-background-secondary{
 	text-decoration: bold;
 	text-transform: none;
 }
+
 #banner{
 	max-width: 100%;
 	margin: 0 auto;
+}
+#arrows{
+	color: black;
 }
