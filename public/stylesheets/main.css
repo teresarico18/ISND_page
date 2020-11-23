@@ -7,7 +7,8 @@ h2, h3, h4{
 nav.uk-navbar-container.uk-background-secondary{
 	background-color: #FF5A00;
 	color: white;
-
+	font-size: 1.05em;
+	font-weight: bold;
 }
 .bg-image{
 	width: 100%;
@@ -37,11 +38,10 @@ nav.uk-navbar-container.uk-background-secondary{
 	text-decoration: bold;
 	text-transform: none;
 }
-
-#banner{
-	max-width: 100%;
-	margin: 0 auto;
+#materias{
+	color: #FF5A00;
 }
+
 #arrows{
 	color: black;
 }

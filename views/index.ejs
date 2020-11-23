@@ -1,35 +1,54 @@
 <%- include("./partials/header"); %>
 
-<div class="uk-grid-collapse uk-child-width-expand@s uk-width-1-1 uk-margin-remove-vertical full-height" uk-grid uk-height-match="row: false" id="banner">
-	<div class="bg-image">
-		<div class="uk-card-body uk-padding-small">
-			<p class="uk-card-title">Headline</p>
-			<p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-		</div>
-	</div>    
+<div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 5000; ratio: 7:3">
+	<ul class="uk-slideshow-items">
+		<li>
+			<img src="https://i.imgur.com/p6mNjLn.jpg" alt="" uk-cover>
+			<div class="uk-overlay uk-light uk-position-bottom-center">
+				<h2 class="uk-margin-remove uk-text-center">Licenciatura de Ingeniería en Sistemas y Negocios Digitales</h2>
+				<p class="uk-margin-remove uk-text-center">del IEST Anáhuac</p>
+			</div>
+		</li>
+		<li>
+			<img src="https://i.imgur.com/p6mNjLn.jpg" alt="" uk-cover>
+			<div class="uk-overlay uk-light uk-position-bottom-center">
+				<h2 class="uk-margin-remove uk-text-center">Licenciatura de Ingeniería en Sistemas y Negocios Digitales</h2>
+				<p class="uk-margin-remove uk-text-center">del IEST Anáhuac</p>
+			</div>
+		</li>
+	</ul>
 </div>
 
 <div class="uk-padding-small">
 	<h2 class="uk-text-center uk-text-bolder uk-padding-small">Testimonios</h2>
-	<div class="uk-grid uk-width-1-1 uk-flex-center uk-align-center uk-column-1-3@l " uk-grid uk-flexuk-height-match=".bigger">
-		<div class="uk-text-center uk-text-normal uk-padding-remove bigger">
-			<blockquote cite="#">
-				<p class="uk-margin-small-bottom">En ISND aprendí que un gran proyecto comienza una pequeña idea, que si lo puedes pensar, lo puedes hacer y sobre todo, que las limitaciones nos las ponemos nosotros mismos.</p>
-				<footer>Andrea Sosa</footer>
-			</blockquote>
+	<div class="uk-grid uk-align-center uk-column-1-3@m uk-margin-remove" uk-grid>
+		<div class="uk-padding-remove">
+			<div class="uk-text-center uk-text-normal uk-padding-remove">
+				<blockquote cite="#">
+					<p class="uk-margin-small-bottom">En ISND aprendí que un gran proyecto comienza una pequeña idea, que si lo puedes pensar, lo puedes hacer.</p>
+					<footer>Andrea Sosa</footer>
+				</blockquote>
+			</div>
 		</div>
-		<div class="uk-text-center uk-text-normal uk-padding-remove uk-visible@m">
-			<blockquote cite="#">
-				<p class="uk-margin-small-bottom">En ISND aprendí que un gran proyecto comienza una pequeña idea, que si lo puedes pensar, lo puedes hacer y sobre todo, que las limitaciones nos las ponemos nosotros mismos.</p>
-				<footer>Oscar González</footer>
-			</blockquote>
+		<div class="uk-padding-remove">
+			<div class="uk-text-center uk-text-normal uk-padding-remove uk-visible@m">
+				<blockquote cite="#">
+					<p class="uk-margin-small-bottom">Mi experiencia ha sido desencadenadora, siento que puedo hacer cualquier cosa si me lo propongo</p>
+					<footer>Oscar González</footer>
+				</blockquote>
+			</div>
 		</div>
-		<div class="uk-text-center uk-text-normal uk-padding-remove uk-visible@m">
-			<blockquote cite="#">
-				<p class="uk-margin-small-bottom">Es una carrera desafiante pero que me prepara para el mejor futuro posible.</p>
-				<footer>Humberto Cabrera</footer>
-			</blockquote>
+		<div class="uk-padding-remove">
+			<div class="uk-text-center uk-text-normal uk-padding-remove uk-visible@m">
+				<blockquote cite="#">
+					<p class="uk-margin-small-bottom">Es una carrera desafiante pero que me prepara para el mejor futuro posible.</p>
+					<footer>Humberto Cabrera</footer>
+				</blockquote>
+			</div>
 		</div>
+		
+		
+		
 	</div>
 </div>
 
