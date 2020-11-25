@@ -12,17 +12,8 @@ router.get("/new", (req, res) => {
   res.render("noticias/new");
 });
 // POST METHOD USER POSTS A NEW "NOTICA"
-router.post("/new", noticiaController.experimentcreateNotica);
+router.post("/new", noticiaController.experimentcreateNoticia);
 
-router.get("/:noticia", (req, res) => {
-  const Noticia = req.params.noticia;
-  Noticia.findById(req.params.id).exec(function (err, foundNoticia) {
-    if (err) {
-      console.log(err);
-    } else {
-      res.render("noticias/show", { noticia: foundNoticia });
-    }
-  });
-});
+router.get("/:noticia", noticiaController.showNoticiaById);
 
 module.exports = router;

@@ -15,30 +15,31 @@ const Noticia = require("../models/Noticia.js");
   */
 
 module.exports = {
-  async experimentcreateNotica(req, res) {
+  async experimentcreateNoticia(req, res) {
     console.log(req);
     console.log(req.body); // Now we will see the form data!!
-    const { titulo, autor, mes, extracto, mensaje, imagen } = req.body; // We destructure the object
+    const { titulo, autor, fecha, extracto, texto, imagen } = req.body; // We destructure the object
     // We create a new noticia and save it into MongoDB
     const noticia = await Noticia.create({
       titulo,
       autor,
-      mes,
+      fecha,
       extracto,
-      mensaje,
+      texto,
       imagen,
     });
     return res.json({ noticia }); // As an experiment we are going to test if we could save the data in Mongo
   },
   async fetchNoticias(req, res) {
-    Noticia.find({}, (err, allNoticias) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.render("noticias/index", { noticias: allNoticias });
-      }
-    });
     const noticias = await Noticia.find({});
+    console.log(noticias);
+    if (noticias) {
+      res.render("noticias/index", {
+        noticias: noticias,
+      });
+    } else {
+      res.render("noticias/index");
+    }
   },
   async createNoticia(req, res) {
     const { titulo, autor, fecha, extracto, texto, imagen } = req.body;
@@ -55,6 +56,18 @@ module.exports = {
     });
 
     return res.render("index");
+  },
+  async showNoticiaById(req, res) {
+    const idNoticia = req.params.noticia;
+    const noticia = await Noticia.findById(idNoticia);
+    console.log(noticia);
+    if (noticia) {
+      res.render("noticias/show", {
+        noticia: noticia,
+      });
+    } else {
+      res.redirect("/");
+    }
   },
   async updateNoticia(req, res) {},
 };

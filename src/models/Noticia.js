@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const NoticiaSchema = new mongoose.Schema({
   titulo: String,
   autor: String,
-  mes: Date,
+  fecha: Date,
   extracto: String,
-  mensaje: String,
+  texto: String,
   imagen: String,
 });
 
