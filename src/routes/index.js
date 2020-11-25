@@ -13,8 +13,8 @@ router.get("/contacto", (req, res) =>{
     res.render("contacto");
 });
 
-router.get("/oferta", (req, res) =>{
-    res.render("oferta");
+router.get("/nosotros", (req, res) =>{
+    res.render("nosotros");
 });
 
 module.exports = router;

@@ -15,12 +15,12 @@ const Noticia = require("../models/Noticia.js");
   */
 
 module.exports = {
-  async createEvent(req, res) {
+  async createNoticia(req, res) {
     const { titulo, autor, fecha, extracto, texto, imagen } = req.body;
 
     //02-02-2020
     //TODO : FORMAT DATE
-    const evento = await Evento.create({
+    const noticia = await Noticia.create({
       titulo,
       autor,
       fecha,
@@ -31,5 +31,5 @@ module.exports = {
 
     return res.render("index");
   },
-  async updateEvento(req, res) {},
+  async updateNoticia(req, res) {},
 };
