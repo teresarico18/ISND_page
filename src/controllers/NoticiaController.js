@@ -69,20 +69,11 @@ module.exports = {
       res.redirect("/");
     }
   },
-  async latestNoticias(req,res){
-    const noticias = await Noticia.find() // We get all the news
-    /*if (latestNoticias){
-      console.log(noticias);
-      const latestNoticias = latestNoticias.filter((noticia)=>{
-        if(noticia.fetchNoticias){
-
-        }else{
-
-        }
-      }) 
-    }else{
-
-    }*/
+  async latestNoticias() {
+    const noticias = await Noticia.find(); // We get all the news
+    // Return an sliced array of 5 news if we could get them from mongoDB
+    console.log(noticias);
+    return noticias ? noticias.slice(noticias.length - 5, noticias.length) : [];
   },
   async updateNoticia(req, res) {},
 };
