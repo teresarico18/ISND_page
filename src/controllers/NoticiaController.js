@@ -16,8 +16,6 @@ const Noticia = require("../models/Noticia.js");
 
 module.exports = {
   async experimentcreateNoticia(req, res) {
-    console.log(req);
-    console.log(req.body); // Now we will see the form data!!
     const { titulo, autor, fecha, extracto, texto, imagen } = req.body; // We destructure the object
     // We create a new noticia and save it into MongoDB
     const noticia = await Noticia.create({
@@ -32,7 +30,6 @@ module.exports = {
   },
   async fetchNoticias(req, res) {
     const noticias = await Noticia.find({});
-    console.log(noticias);
     if (noticias) {
       res.render("noticias/index", {
         noticias: noticias,
@@ -60,7 +57,6 @@ module.exports = {
   async showNoticiaById(req, res) {
     const idNoticia = req.params.noticia;
     const noticia = await Noticia.findById(idNoticia);
-    console.log(noticia);
     if (noticia) {
       res.render("noticias/show", {
         noticia: noticia,
@@ -69,11 +65,13 @@ module.exports = {
       res.redirect("/");
     }
   },
-  async latestNoticias() {
+  async latestNoticias(req, res) {
     const noticias = await Noticia.find(); // We get all the news
     // Return an sliced array of 5 news if we could get them from mongoDB
-    console.log(noticias);
-    return noticias ? noticias.slice(noticias.length - 5, noticias.length) : [];
+    const latestNews = noticias
+      ? noticias.slice(noticias.length - 5, noticias.length)
+      : [];
+    res.render("index", { noticias: latestNews });
   },
   async updateNoticia(req, res) {},
 };

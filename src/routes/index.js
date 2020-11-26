@@ -2,10 +2,7 @@ const express = require("express");
 const router = express.Router();
 const NoticiaController = require("../controllers/NoticiaController");
 
-router.get("/", async (req, res) => {
-  const noticias = await NoticiaController.latestNoticias(); //We get the latest news
-  res.render("index", { noticias });
-});
+router.get("/", NoticiaController.latestNoticias);
 
 router.get("/faqs", (req, res) => {
   res.render("faqs");
