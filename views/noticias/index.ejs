@@ -11,18 +11,18 @@
         </ul>
       </div>
     </div>
-    <div class="uk-grid-match uk-child-width-1-3@s" uk-grid>
+    <div class="uk-grid-match uk-child-width-1-3@s" uk-grid="masonry: true">
       <% noticias.forEach( function(noticia, iterador){ %>
       <div>
         <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
           <% if(iterador% 2 == 0) {%>
           <div class="uk-card-media-top">
-            <img src="<%= noticia.imagen %>" alt="" />
+            <img src="<%= noticia.imagen %>" alt="" loading="lazy" />
           </div>
           <div class="uk-card-body">
             <h3 class="uk-card-title"><%= noticia.titulo %></h3>
             <p class="uk-text-meta uk-margin-remove-top">
-              <time datetime=""><%= noticia.fecha %></time>
+              <time datetime=""><%= noticia.fecha.toDateString()%></time>
             </p>
             <p><%= noticia.extracto %></p>
           </div>
@@ -30,21 +30,17 @@
           <div class="uk-card-body">
             <h3 class="uk-card-title"><%= noticia.titulo %></h3>
             <p class="uk-text-meta uk-margin-remove-top">
-              <time datetime=""><%= noticia.fecha %></time>
+              <time datetime=""><%= noticia.fecha.toDateString() %></time>
             </p>
             <p><%= noticia.extracto %></p>
           </div>
           <div class="uk-card-media-bottom">
-            <img src="<%= noticia.imagen %>" alt="" />
+            <img src="<%= noticia.imagen %>" alt="" loading="lazy" />
           </div>
           <% } %>
 
           <div class="uk-card-footer">
-            <a
-              href="noticias/<%= noticia._id %>"
-              class="uk-button uk-button-text"
-              >Read more</a
-            >
+            <a href="noticias/<%= noticia._id %>" class="uk-button uk-button-text">Leer más</a>
           </div>
         </div>
       </div>
