@@ -14,8 +14,5 @@ router.get("/contacto", (req, res) => {
 
 router.get("/nosotros", NoticiaController.nosotrosLatestNoticias);
 
-router.get('*', (req, res) => {
-  res.redirect('/');
-});
 
 module.exports = router;
