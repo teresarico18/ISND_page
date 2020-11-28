@@ -1,12 +1,12 @@
 <%- include("../partials/header"); %>
 
-<div class="uk-section uk-preserve-color uk-padding-remove-top">
-  <h1 class="uk-text-center uk-margin-top">Noticias y Eventos</h1>
+<section class="uk-section uk-preserve-color uk-padding-remove-top">
+  <h1 class="uk-text-center uk-margin-top">Noticias</h1>
   <div class="uk-container">
     <div class="uk-panel uk-margin-small">
       <div class="uk-container">
         <ul class="uk-breadcrumb uk-text-left">
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li class="uk-disabled"><a>Noticias</a></li>
         </ul>
       </div>
@@ -38,7 +38,6 @@
             <img src="<%= noticia.imagen %>" alt="" loading="lazy" />
           </div>
           <% } %>
-
           <div class="uk-card-footer">
             <a href="noticias/<%= noticia._id %>" class="uk-button uk-button-text">Leer más</a>
           </div>
@@ -47,6 +46,6 @@
       <% }); %>
     </div>
   </div>
-</div>
+</section>
 
 <%- include("../partials/footer"); %>
