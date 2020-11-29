@@ -51,5 +51,9 @@ router.post('/contacto', (req, res) => {
 
 router.get("/nosotros", NoticiaController.nosotrosLatestNoticias);
 
+router.get("/proyectos", (req, res) => {
+  res.render("proyectos");
+});
+
 
 module.exports = router;
