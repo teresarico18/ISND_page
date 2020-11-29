@@ -9,7 +9,7 @@
 	</div>
 	<div class="uk-container-large  uk-comment-primary">
 		<h1>Contacto</h1>
-		<form class="uk-form-stacked">
+		<form class="uk-form-stacked" method="POST" action="/contacto" role="form">
 			<div class="uk-margin-bottom">
 				<label class="uk-text-normal">Nombre</label>
 				<input class="uk-input uk-margin-small-top" type="text" name="nombre" placeholder="Nombre Completo"
@@ -22,8 +22,8 @@
 			</div>
 			<div class="uk-margin-bottom">
 				<label class="uk-text-normal">Mensaje</label>
-				<textarea class="uk-textarea uk-margin-small-top" type="" name="mensaje" placeholder="Tu mensaje..."
-					required></textarea>
+				<textarea class="uk-textarea uk-margin-small-top" rows="8" type="" name="mensaje"
+					placeholder="Tu mensaje..." required></textarea>
 			</div>
 			<button class="uk-button uk-align-center" type="submit">Enviar</button>
 		</form>
