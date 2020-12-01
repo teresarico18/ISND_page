@@ -1,33 +1,56 @@
 <%- include("./partials/header"); %>
 
 <div class="uk-width-3-4@s uk-align-center" ukgrid>
-	<div class="uk-margin-medium-left uk-margin-remove-left@s">
-		<ul class="uk-breadcrumb">
-			<li><a href="/">Inicio</a></li>
-			<li class="uk-disabled"><a>Contacto</a></li>
-		</ul>
-	</div>
-	<div class="uk-container-large uk-comment-primary uk-margin-remove">
-		<h1>Contacto</h1>
-		<form class="uk-form-stacked" method="POST" action="/contacto" role="form">
-			<div class="uk-margin-bottom">
-				<label class="uk-text-normal">Nombre</label>
-				<input class="uk-input uk-margin-small-top" type="text" name="nombre" placeholder="Nombre Completo"
-					required>
-			</div>
-			<div class="uk-margin-bottom">
-				<label class="uk-text-normal">Correo electrónico</label>
-				<input class="uk-input uk-margin-small-top" type="email" name="correo" placeholder="Correo electrónico"
-					required>
-			</div>
-			<div class="uk-margin-bottom">
-				<label class="uk-text-normal">Mensaje</label>
-				<textarea class="uk-textarea uk-margin-small-top" rows="8" type="" name="mensaje"
-					placeholder="Tu mensaje..." required></textarea>
-			</div>
-			<button class="uk-button uk-align-center" type="submit">Enviar</button>
-		</form>
-	</div>
+  <div class="uk-margin-medium-left uk-margin-remove-left@s">
+    <ul class="uk-breadcrumb">
+      <li><a href="/">Inicio</a></li>
+      <li class="uk-disabled"><a>Contacto</a></li>
+    </ul>
+  </div>
+  <div class="uk-container-large uk-comment-primary uk-margin-remove">
+    <h1>Contacto</h1>
+    <form class="uk-form-stacked" method="POST" action="/contacto" role="form">
+      <div class="uk-margin-bottom">
+        <label class="uk-text-normal">Nombre</label>
+        <input
+          class="uk-input uk-margin-small-top"
+          type="text"
+          name="nombre"
+          placeholder="Nombre Completo"
+          required
+        />
+      </div>
+      <div class="uk-margin-bottom">
+        <label class="uk-text-normal">Correo electrónico</label>
+        <input
+          class="uk-input uk-margin-small-top"
+          type="email"
+          name="correo"
+          placeholder="Correo electrónico"
+          required
+        />
+      </div>
+      <div class="uk-margin-bottom">
+        <label class="uk-text-normal">Mensaje</label>
+        <textarea
+          class="uk-textarea uk-margin-small-top"
+          rows="8"
+          type=""
+          name="mensaje"
+          placeholder="Tu mensaje..."
+          required
+        ></textarea>
+      </div>
+      <button class="uk-button uk-align-center" type="submit">Enviar</button>
+    </form>
+  </div>
 </div>
+<script type="text/javascript">
 
+   showAlert = function() {
+        alert("Hubo un problema al enviar el correo. Intenta de nuevo!");
+   }
+   console.log(<%=error%>)
+  <%=error%> && showAlert()
+</script>
 <%- include("./partials/footer"); %>
