@@ -10,6 +10,10 @@ h4 {
 small {
   margin-top: 2rem !important;
 }
+/*UTILS*/
+.w-txt {
+  color: white !important;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -32,9 +36,6 @@ small {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
   height: 100%;
   width: 100%;
-}
-.w-txt {
-  color: #fff;
 }
 nav.uk-navbar-container.uk-background-secondary {
   background-color: #ff5a00;
