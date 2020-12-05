@@ -65,21 +65,10 @@ module.exports = {
       res.redirect("/");
     }
   },
-  async indexLatestNoticias(req, res) {
+  async sendLatestNoticias() {
     const noticias = await Noticia.find(); // We get all the news
     // Return an sliced array of 5 news if we could get them from mongoDB
-    const latestNews = noticias
-      ? noticias.slice(noticias.length - 5, noticias.length)
-      : [];
-    res.render("index", { noticias: latestNews });
-  },
-  async nosotrosLatestNoticias(req, res) {
-    const noticias = await Noticia.find(); // We get all the news
-    // Return an sliced array of 5 news if we could get them from mongoDB
-    const latestNews = noticias
-      ? noticias.slice(noticias.length - 5, noticias.length)
-      : [];
-    res.render("nosotros", { noticias: latestNews });
+    return noticias ? noticias.slice(noticias.length - 5, noticias.length) : [];
   },
   async updateNoticia(req, res) {},
 };
