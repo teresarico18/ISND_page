@@ -1,47 +1,76 @@
-html{
-	font-family: 'Roboto', sans-serif;
+html {
+  font-family: "Roboto", sans-serif;
 }
-h2, h3, h4{
-	font-family: 'Zilla Slab', serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Zilla Slab", serif;
 }
-nav.uk-navbar-container.uk-background-secondary{
-	background-color: #FF5A00;
-	color: white;
-	font-size: 1.05em;
-	font-weight: bold;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 468px;
+  background-image: url("https://i.imgur.com/p6mNjLn.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.bg-image{
-	width: 100%;
-	padding-top: 25%;
-	background: url('https://i.imgur.com/NyJioEL.jpg') no-repeat center;
-	background-size: cover;
+.header__wrapper {
+  z-index: 2;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.uk-navbar-toggle{
-	color:white;
+.header__gradient {
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 60%);
+  height: 100%;
+  width: 100%;
 }
-.uk-text-lead{
-	font-family: 'Zilla Slab', serif;
+.w-txt {
+  color: #fff;
 }
-.uk-button .uk-button-text{
-	font-family: 'Roboto', sans-serif;
+nav.uk-navbar-container.uk-background-secondary {
+  background-color: #ff5a00;
+  color: white;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+.bg-image {
+  width: 100%;
+  padding-top: 25%;
+  background: url("https://i.imgur.com/NyJioEL.jpg") no-repeat center;
+  background-size: cover;
+}
+.uk-navbar-toggle {
+  color: white;
+}
+.uk-text-lead {
+  font-family: "Zilla Slab", serif;
+}
+.uk-button .uk-button-text {
+  font-family: "Roboto", sans-serif;
 }
 .full-height {
-    height: 100%;
+  height: 100%;
 }
-.uk-tab>.uk-active>a{
-	border-color:#FF5A00;
+.uk-tab > .uk-active > a {
+  border-color: #ff5a00;
 }
-.uk-navbar-nav>li>a{
-	color: white;
-	font-family: 'Zilla Slab', serif;
-	font-size: 1.1em;
-	text-decoration: bold;
-	text-transform: none;
+.uk-navbar-nav > li > a {
+  color: white;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.1em;
+  text-decoration: bold;
+  text-transform: none;
 }
-#materias{
-	color: #FF5A00;
+#materias {
+  color: #ff5a00;
 }
 
-#arrows{
-	color: black;
+#arrows {
+  color: black;
 }
