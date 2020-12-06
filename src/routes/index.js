@@ -21,7 +21,7 @@ router.get("/contacto", (req, res) => {
 router.post("/contacto", IndexController.sendContactUsEmail);
 
 router.get("/nosotros", async (req, res) => {
-  const noticias = NoticiaController.sendLatestNoticias();
+  const noticias = await NoticiaController.sendLatestNoticias();
   res.render("nosotros", { noticias });
 });
 
