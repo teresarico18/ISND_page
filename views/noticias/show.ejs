@@ -8,7 +8,7 @@
       <li class="uk-disabled"><a><%= noticia.titulo %></a></li>
     </ul>
   </div>
-  <div class="uk-container-large uk-comment-primary ">
+  <div class="uk-container-large uk-comment-primary">
     <article class="uk-article uk-padding-large">
       <h1 class="uk-article-title">
         <a class="uk-link-reset" href=""><%= noticia.titulo %></a>
@@ -21,8 +21,15 @@
 
       <p class="uk-text-lead"><%= noticia.extracto %></p>
 
-      <img class="uk-margin-bottom" data-src="<%= noticia.imagen %>" loading="lazy" width="1800" height="1200" alt=""
-        uk-img />
+      <img
+        class="uk-margin-bottom"
+        data-src="<%= noticia.imagen %>"
+        loading="lazy"
+        width="1800"
+        height="1200"
+        alt="Noticia"
+        uk-img
+      />
 
       <!--<p><%= noticia.texto %></p>-->
       <%# This tag renders the HTML %> <%- noticia.texto %>
