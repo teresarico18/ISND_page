@@ -3,6 +3,7 @@ const router = express.Router();
 const NoticiaController = require("../controllers/NoticiaController");
 const IndexController = require("../controllers/IndexController");
 const nodemailer = require("nodemailer");
+const Materia = require("../models/Materia");
 
 router.get("/", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
@@ -22,6 +23,8 @@ router.post("/contacto", IndexController.sendContactUsEmail);
 
 router.get("/nosotros", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
+  //TODO : MUST CHANGE THE CONTROLLER AND SEND IT
+  const materias = await MateriaController.getMaterias();
   res.render("nosotros", { noticias });
 });
 
