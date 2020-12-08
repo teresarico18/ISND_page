@@ -29,15 +29,15 @@
 
 					<ul class="uk-slideshow-items">
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="1800" height="1200" alt="ISND" uk-cover
+							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="1800" height="1200" alt="ISND" uk-cover
+							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" width="1800" height="1200" alt="ISND" uk-cover
+							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 					</ul>
@@ -69,7 +69,7 @@
 						<div class="uk-card uk-card-default">
 							<div class="uk-card-media-top">
 								<img loading="lazy" src="<%=materia.imagen%>"
-									alt="Materia ISND">
+									alt="Materia Bloque Sistemas ISND">
 							</div>
 							<div class="uk-card-body uk-text-center uk-padding-small">
 								<a href="#materia1" uk-toggle>
@@ -97,16 +97,16 @@
 			<h3 class="uk-text-bold uk-margin-left uk-margin-right uk-text-center uk-text-left@s" id="materias">Negocios
 				Digitales y Administración</h3>
 			<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true; parallax: 90">
+				<%materias["negocios"].forEach((materia)=>{%>
 				<div>
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/imagen-doble-exposicion-muchas-personas-negocios_31965-2289.jpg"
-								alt="Materia ISND">
+							<img loading="lazy" src="<%=materia.imagen%>"
+								alt="Materia Bloque Negocios ISND">
 						</div>
 						<div class="uk-card-body uk-text-center uk-padding-small">
 							<a href="#materia21" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Introducción a la empresa</h3>
+								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom"><%=materia.nombre%></h3>
 							</a>
 						</div>
 					</div>
@@ -114,192 +114,17 @@
 						<div class="uk-modal-dialog">
 							<button class="uk-modal-close-outside" type="button" uk-close></button>
 							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Introducción a la empresa</h2>
+								<h2 class="uk-modal-title"><%=materia.nombre%></h2>
 							</div>
 							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/imagen-doble-exposicion-muchas-personas-negocios_31965-2289.jpg"
-									alt="Materia ISND">
-								<p>Estudiarás los conceptos básicos de una empresa como su estructura, su cadena de
-									valor, sus relaciones con otras empresas, etc. Al finalizar comprenderás la
-									estructura básica y las partes esenciales de la empresa.</p>
+								<img loading="lazy" src="<%=materia.imagen%>"
+									alt="Materia Negocios ISND">
+								<p><%=materia.descripcion%></p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<!--<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/grafico-exacto-primer-plano-bitcoin-dolar_151013-12386.jpg"
-								alt="Materia ISND">
-						</div>-->
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia22" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Gestión de Negocios Digitales</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia22" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Gestión de Negocios Digitales</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/grafico-exacto-primer-plano-bitcoin-dolar_151013-12386.jpg"
-									alt="Materia ISND">
-								<p>Desarrollarás habilidades que te permitirán entender las necesidades y objetivos de
-									las empresas basadas en el internet.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/bufete-abogados-estatua-justicia-escalas-abogado-trabajando-tableta-digital_73110-7863.jpg"
-								alt="Materia ISND">
-						</div>
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia23" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Legislación Informática</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia23" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Legislación Informática</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/bufete-abogados-estatua-justicia-escalas-abogado-trabajando-tableta-digital_73110-7863.jpg"
-									alt="Materia ISND">
-								<p>Estudiarás los conceptos básicos del derecho y los delitos, pero sobretodo te
-									enfocarás en el uso de la informátiva dentro de la legislación y de las normas que
-									solucionan
-									los problemas surgidos entorno a la informática.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<!--<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/concepto-financiero-iconos-cubos-madera-calculadora-mesa-azul-plano-lay_176474-9440.jpg"
-								alt="Materia ISND">
-						</div>-->
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia24" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Contabilidad y Costos para Ingeniería</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia24" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Contabilidad y Costos para Ingeniería</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/concepto-financiero-iconos-cubos-madera-calculadora-mesa-azul-plano-lay_176474-9440.jpg"
-									alt="Materia ISND">
-								<p>Se abordarán temas de contabilidad financiera, elaboración de presupuestos y costos
-									de producción para que puedas ser capaz de comprender las necesidades financieras y
-									económicas de una organización.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/manos-usando-pantalla-tableta-que-muestra-estadisticas-datos-comerciales_53876-42762.jpg"
-								alt="Materia ISND">
-						</div>
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia25" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Tratamiento estadístico de la Información</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia25" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Tratamiento estadístico de la Información</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/manos-usando-pantalla-tableta-que-muestra-estadisticas-datos-comerciales_53876-42762.jpg"
-									alt="Materia ISND">
-								<p>Con el uso de técnicas estadísticas, serás capaz de procesar datos e información que
-									te permitirán facilitar la toma de decisiones y preveer mejores soluciones a los
-									problemas.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<!--<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/gente-negocios-analizando-estadisticas-concepto-financiero_53876-23509.jpg"
-								alt="Materia ISND">
-						</div>-->
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia26" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Planeación Estratégica</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia26" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Planeación Estratégica</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/gente-negocios-analizando-estadisticas-concepto-financiero_53876-23509.jpg"
-									alt="Materia ISND">
-								<p>Con la planeación estratégica estudiarás a detalle el proceso administrativo que
-									necesitarás para poder trazar las metas y los pasos a seguir de una
-									organización.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img loading="lazy" src="https://image.freepik.com/foto-gratis/empresario-haciendo-analisis-negocios_158043-20.jpg"
-								alt="Materia ISND">
-						</div>
-						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia27" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
-									Ingeniería Económica</h3>
-							</a>
-						</div>
-					</div>
-					<div id="materia27" uk-modal>
-						<div class="uk-modal-dialog">
-							<button class="uk-modal-close-outside" type="button" uk-close></button>
-							<div class="uk-modal-header">
-								<h2 class="uk-modal-title">Ingeniería Económica</h2>
-							</div>
-							<div class="uk-modal-body">
-								<img loading="lazy" src="https://image.freepik.com/foto-gratis/empresario-haciendo-analisis-negocios_158043-20.jpg"
-									alt="Materia ISND">
-								<p>Aprenderás a tomar decisiones basadas en la microeconomía y en las comparaciones
-									econónomicas de las diferentes inversiones tecnologías posibles.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				<%})%>
 		</li>
 		<li class="">
 			<div class="uk-width-3-4@s uk-align-center">
@@ -313,49 +138,43 @@
 					han enfocado en diferentes ámbitos, ya que esta carrer es en definitiva una de las
 					mas diversas. Conócelos y encuentra en sus historias de éxito los motivos por los
 					cuales deberías convertirte en un Ingeniero en Sistemas y Negocios Digitales.</p>
-			</div>
-			<div class="uk-position-relative uk-visible-toggle" tabindex="-1"
-				uk-slideshow="animation: fade; autoplay: true; ratio: 7:3">
+				<div class="uk-slider-container-offset" uk-slider>
 
-				<ul class="uk-slideshow-items">
-					<li>
-						<img loading="lazy" src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover>
-						<div class="uk-overlay uk-overlay-default uk-position-top-right uk-position-small">
-							<h2 class="uk-margin-remove">Center</h2>
-							<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-					</li>
-					<li>
-						<img loading="lazy" src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" loading="lazy" uk-cover>
-						<div class="uk-overlay uk-overlay-default uk-position-bottom-left uk-position-small">
-							<h3 class="uk-margin-remove">Bottom</h3>
-							<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-					</li>
-					<li>
-						<img loading="lazy" src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" loading="lazy" uk-cover>
-						<div class="uk-overlay uk-overlay-default uk-position-top-left uk-position-small">
-							<h3 class="uk-margin-remove">Overlay Bottom</h3>
-							<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div>
-					</li>
-					<li>
-						<img loading="lazy" src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" loading="lazy" uk-cover>
-						<div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
-							<h3 class="uk-margin-remove">Overlay Bottom Right</h3>
-							<p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
-						</div>
-					</li>
-				</ul>
+					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-				<div class="uk-light">
-					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-						uk-slideshow-item="previous"></a>
-					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-						uk-slideshow-item="next"></a>
+						<ul class="uk-slider-items uk-child-width-1-1@s uk-grid">
+							<%egresados.forEach((egresado)=>{%>
+							<li>
+								<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+									uk-grid>
+									<div class="uk-card-media-left uk-cover-container">
+										<img src="<%= egresado.imagen %>"
+											alt="Egresado <%= egresado.nombre %>" loading="lazy" uk-cover>
+										<canvas width="600" height="400"></canvas>
+									</div>
+									<div class="uk-flex uk-flex-middle">
+										<div class="uk-card-body">
+											<h3 class="uk-card-title"><%= egresado.nombre %></h3>
+											<p><%= egresado.puesto %></p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<%})%>
+						</ul>
+
+						<a class="uk-position-center-left uk-position-small uk-hidden-hover" id="arrows" href="#"
+							uk-slidenav-previous uk-slider-item="previous"></a>
+						<a class="uk-position-center-right uk-position-small uk-hidden-hover" id="arrows" href="#" uk-slidenav-next
+							uk-slider-item="next"></a>
+
+					</div>
+
+					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
 				</div>
-
 			</div>
+
 		</li>
 		<li class="uk-width-3-4@s uk-align-center">
 			<div class="uk-margin-left uk-margin-right">

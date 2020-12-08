@@ -5,6 +5,7 @@ const IndexController = require("../controllers/IndexController");
 const nodemailer = require("nodemailer");
 const Materia = require("../models/Materia");
 const MateriaController = require("../controllers/MateriaController");
+const EgresadoController = require("../controllers/EgresadoController");
 
 router.get("/", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
@@ -24,9 +25,9 @@ router.post("/contacto", IndexController.sendContactUsEmail);
 
 router.get("/nosotros", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
-  //TODO : MUST CHANGE THE CONTROLLER AND SEND IT
   const materias = await MateriaController.getMaterias();
-  res.render("nosotros", { noticias, materias });
+  const egresados = await EgresadoController.getEgresados();
+  res.render("nosotros", { noticias, materias, egresados });
 });
 
 router.get("/proyectos", (req, res) => {
