@@ -26,7 +26,7 @@ router.get("/nosotros", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
   //TODO : MUST CHANGE THE CONTROLLER AND SEND IT
   const materias = await MateriaController.getMaterias();
-  res.render("nosotros", { noticias });
+  res.render("nosotros", { noticias, materias });
 });
 
 router.get("/proyectos", (req, res) => {
