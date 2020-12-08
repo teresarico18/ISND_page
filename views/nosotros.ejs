@@ -29,15 +29,23 @@
 
 					<ul class="uk-slideshow-items">
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
+							<img data-src="https://i.ibb.co/LQ292CR/IMG-E5903.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
+							<img data-src="https://i.ibb.co/z7W6JCh/IMG-5787.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 						<li>
-							<img data-src="https://i.imgur.com/xrlyKNm.jpg" alt="ISND" uk-cover
+							<img data-src="https://i.ibb.co/FHkv5FC/IMG-5878.jpg" alt="ISND" uk-cover
+								uk-img="target: !.uk-slideshow-items">
+						</li>
+						<li>
+							<img data-src="https://i.ibb.co/P1VVSBh/IMG-E5771.jpg" alt="ISND" uk-cover
+								uk-img="target: !.uk-slideshow-items">
+						</li>
+						<li>
+							<img data-src="https://i.ibb.co/pLgTtRG/IMG-5953.jpg" alt="ISND" uk-cover
 								uk-img="target: !.uk-slideshow-items">
 						</li>
 					</ul>
@@ -65,32 +73,31 @@
 				Tecnológica</h3>
 			<div class="uk-child-width-1-2@s uk-child-width-1-3@m " uk-grid="masonry: true; parallax: 150">
 				<%materias["sistemas"].forEach((materia)=>{%>
-					<div>
-						<div class="uk-card uk-card-default">
-							<div class="uk-card-media-top">
-								<img loading="lazy" src="<%=materia.imagen%>"
-									alt="Materia Bloque Sistemas ISND">
-							</div>
-							<div class="uk-card-body uk-text-center uk-padding-small">
-								<a href="#materia1" uk-toggle>
-									<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom"><%=materia.nombre%></h3>
-								</a>
-							</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img loading="lazy" src="<%=materia.imagen%>" alt="Materia Bloque Sistemas ISND">
 						</div>
-						<div id="materia1" uk-modal>
-							<div class="uk-modal-dialog">
-								<button class="uk-modal-close-outside" type="button" uk-close></button>
-								<div class="uk-modal-header">
-									<h2 class="uk-modal-title"><%=materia.nombre%></h2>
-								</div>
-								<div class="uk-modal-body">
-									<img loading="lazy" src="<%=materia.imagen%>"
-										alt="Materia ISND">
-									<p><%=materia.descripcion%></p>
-								</div>
+						<div class="uk-card-body uk-text-center uk-padding-small">
+							<a href="#materia1" uk-toggle>
+								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
+									<%=materia.nombre%></h3>
+							</a>
+						</div>
+					</div>
+					<div id="materia1" uk-modal>
+						<div class="uk-modal-dialog">
+							<button class="uk-modal-close-outside" type="button" uk-close></button>
+							<div class="uk-modal-header">
+								<h2 class="uk-modal-title"><%=materia.nombre%></h2>
+							</div>
+							<div class="uk-modal-body">
+								<img loading="lazy" src="<%=materia.imagen%>" alt="Materia ISND">
+								<p><%=materia.descripcion%></p>
 							</div>
 						</div>
 					</div>
+				</div>
 				<%})%>
 			</div>
 
@@ -101,12 +108,12 @@
 				<div>
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-media-top">
-							<img loading="lazy" src="<%=materia.imagen%>"
-								alt="Materia Bloque Negocios ISND">
+							<img loading="lazy" src="<%=materia.imagen%>" alt="Materia Bloque Negocios ISND">
 						</div>
 						<div class="uk-card-body uk-text-center uk-padding-small">
 							<a href="#materia21" uk-toggle>
-								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom"><%=materia.nombre%></h3>
+								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
+									<%=materia.nombre%></h3>
 							</a>
 						</div>
 					</div>
@@ -117,8 +124,7 @@
 								<h2 class="uk-modal-title"><%=materia.nombre%></h2>
 							</div>
 							<div class="uk-modal-body">
-								<img loading="lazy" src="<%=materia.imagen%>"
-									alt="Materia Negocios ISND">
+								<img loading="lazy" src="<%=materia.imagen%>" alt="Materia Negocios ISND">
 								<p><%=materia.descripcion%></p>
 							</div>
 						</div>
@@ -148,14 +154,17 @@
 								<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
 									uk-grid>
 									<div class="uk-card-media-left uk-cover-container">
-										<img src="<%= egresado.imagen %>"
-											alt="Egresado <%= egresado.nombre %>" loading="lazy" uk-cover>
+										<img src="<%= egresado.imagen %>" alt="Egresado <%= egresado.nombre %>"
+											loading="lazy" uk-cover>
 										<canvas width="600" height="400"></canvas>
 									</div>
 									<div class="uk-flex uk-flex-middle">
 										<div class="uk-card-body">
-											<h3 class="uk-card-title"><%= egresado.nombre %></h3>
-											<p><%= egresado.puesto %></p>
+											<h3 class="uk-card-title uk-text-large"
+												uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">
+												<%= egresado.nombre %></h3>
+											<p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0"><%= egresado.puesto %>
+											</p>
 										</div>
 									</div>
 								</div>
@@ -165,8 +174,8 @@
 
 						<a class="uk-position-center-left uk-position-small uk-hidden-hover" id="arrows" href="#"
 							uk-slidenav-previous uk-slider-item="previous"></a>
-						<a class="uk-position-center-right uk-position-small uk-hidden-hover" id="arrows" href="#" uk-slidenav-next
-							uk-slider-item="next"></a>
+						<a class="uk-position-center-right uk-position-small uk-hidden-hover" id="arrows" href="#"
+							uk-slidenav-next uk-slider-item="next"></a>
 
 					</div>
 
@@ -191,18 +200,19 @@
 					<div class="uk-flex uk-flex-middle">
 						<div class="uk-text-center uk-text-left@s">
 							<h3 class="uk-card-title">Web App de Realidad virtual</h3>
-							<p>Visita este <a href="">sitio</a> y utilizá la cámara de tu celular para leer el marcador
-								para descubrir una
+							<p>Visita este <a href="https://rva-tlrs.glitch.me/">sitio</a> y utilizá la cámara de tu
+								celular para leer el marcador
+								y descubrir una
 								sorpresa.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+				<div class="uk-card uk-grid-medium uk-child-width-1-2@s uk-margin uk-flex" uk-grid>
 					<div class="uk-flex uk-flex-middle">
-						<div class="uk-text-center uk-text-left@s">
-							<h3 class="uk-card-title">Web App de Realidad virtual</h3>
-							<p class="uk-margin-right">¡Prueba el <a href="https://buzzer-d9d75.web.app/">AEIS
+						<div class="uk-text-center uk-text-right@s uk-flex-last uk-flex-first@s">
+							<h3 class="uk-card-title">Buzzer App</h3>
+							<p class="">¡Prueba el <a href="https://buzzer-d9d75.web.app/">AEIS
 									Buzzer</a>
 								con otros juegos!
 								<br>
@@ -212,7 +222,8 @@
 							</p>
 						</div>
 					</div>
-					<div class="uk-card-media-right uk-cover-container">
+					<div
+						class="uk-card-media-right uk-cover-container uk-flex-first uk-flex-last@s uk-margin-small uk-flex uk-flex-middle ">
 						<img loading="lazy" src="https://i.ibb.co/G3wPmBk/aeis-buzzer.png" alt="ISND">
 					</div>
 				</div>
