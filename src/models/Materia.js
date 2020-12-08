@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-const MateriaSchema = mongoose.model({
+const MateriaSchema = new mongoose.Schema({
   nombre: String,
   imagen: String,
   descripcion: String,
   bloque: String,
 });
 
-module.exports = mongoose.Model("Materia", MateriaSchema);
+module.exports = mongoose.model("Materia", MateriaSchema);

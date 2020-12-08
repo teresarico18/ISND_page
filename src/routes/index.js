@@ -4,6 +4,7 @@ const NoticiaController = require("../controllers/NoticiaController");
 const IndexController = require("../controllers/IndexController");
 const nodemailer = require("nodemailer");
 const Materia = require("../models/Materia");
+const MateriaController = require("../controllers/MateriaController");
 
 router.get("/", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
