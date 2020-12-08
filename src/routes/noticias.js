@@ -11,8 +11,8 @@ router.post("/", noticiaController.createNoticia);
 router.get("/new", (req, res) => {
   res.render("noticias/new");
 });
-// POST METHOD USER POSTS A NEW "NOTICA"
-router.post("/new", noticiaController.experimentcreateNoticia);
+// POST METHOD USER POSTS A NEW "NOTICIA"
+router.post("/new", noticiaController.createNoticia);
 
 router.get("/:noticia", noticiaController.showNoticiaById);
 

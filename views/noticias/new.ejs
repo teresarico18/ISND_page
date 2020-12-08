@@ -6,31 +6,73 @@
     <form class="uk-form-stacked" action="/noticias/new" method="POST">
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Título</label>
-        <input class="uk-input uk-margin-small-top" type="text" name="titulo" placeholder="Titulo del evento"
-          required />
+        <input
+          class="uk-input uk-margin-small-top"
+          type="text"
+          name="titulo"
+          placeholder="Titulo del evento"
+          required
+        />
       </div>
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Autor</label>
-        <input class="uk-input uk-margin-small-top" type="text" name="autor" placeholder="Autor" required />
+        <input
+          class="uk-input uk-margin-small-top"
+          type="text"
+          name="autor"
+          placeholder="Autor"
+          required
+        />
       </div>
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Fecha</label>
-        <input class="uk-input uk-margin-small-top" type="date" name="fecha" required />
+        <input
+          class="uk-input uk-margin-small-top"
+          type="date"
+          name="fecha"
+          required
+        />
       </div>
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Extracto</label>
-        <textarea class="uk-textarea uk-margin-small-top" type="text" name="extracto"
-          placeholder="Pequeño parrafo para describir el evento..." required></textarea>
+        <textarea
+          class="uk-textarea uk-margin-small-top"
+          type="text"
+          name="extracto"
+          placeholder="Pequeño parrafo para describir el evento..."
+          required
+        ></textarea>
       </div>
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Texto</label>
-        <textarea class="uk-textarea uk-margin-small-top" type="text" name="texto" rows="10"
-          placeholder="Texto completo..." required></textarea>
+        <textarea
+          class="uk-textarea uk-margin-small-top"
+          type="text"
+          name="texto"
+          rows="10"
+          placeholder="Texto completo..."
+          required
+        ></textarea>
       </div>
       <div class="uk-margin-bottom">
         <label class="uk-text-normal">Imagen</label>
-        <input class="uk-textarea uk-margin-small-top" type="url" name="imagen"
-          placeholder="Link a la imagen del evento" required />
+        <input
+          class="uk-textarea uk-margin-small-top"
+          type="url"
+          name="imagen"
+          placeholder="Link a la imagen del evento"
+          required
+        />
+      </div>
+      <div class="uk-margin-bottom">
+        <label class="uk-text-normal">Clave de admin</label>
+        <input
+          class="uk-textarea uk-margin-small-top"
+          type="password"
+          name="password"
+          placeholder="Clave de acceso"
+          required
+        />
       </div>
       <button class="uk-button uk-align-center" type="submit">Enviar</button>
     </form>
