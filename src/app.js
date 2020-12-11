@@ -27,5 +27,5 @@ app.use("/noticias", noticiasRoutes); // Routes related to noticias
 
 let port = process.env.PORT || 8080;
 app.listen(port, function () {
-  console.log(`Server Listening on port ${PORT}`);
+  console.log(`Server Listening on port ${port}`);
 });
