@@ -6,7 +6,6 @@ const indexRoutes = require("./routes/index.js");
 const noticiasRoutes = require("./routes/noticias.js");
 const bodyParser = require("body-parser"); // This module helps us getting the form data
 const app = express();
-const PORT = process.env.PORT || 8080;
 // set the view engine to ejs
 
 try {
@@ -25,6 +24,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // Add to our server bodyPar
 app.use(express.static(__dirname + "../../public"));
 app.use("/", indexRoutes); //Routes of home
 app.use("/noticias", noticiasRoutes); // Routes related to noticias
-app.listen(PORT, function () {
+
+let port = process.env.PORT || 8080;
+app.listen(port, function () {
   console.log(`Server Listening on port ${PORT}`);
 });
