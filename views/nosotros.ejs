@@ -72,20 +72,20 @@
 				Programación, Redes e Innovación
 				Tecnológica</h3>
 			<div class="uk-child-width-1-2@s uk-child-width-1-3@m " uk-grid="masonry: true; parallax: 150">
-				<%materias["sistemas"].forEach((materia)=>{%>
+				<%materias["sistemas"].forEach((materia, iterador)=>{%>
 				<div>
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-media-top">
 							<img loading="lazy" src="<%=materia.imagen%>" alt="Materia Bloque Sistemas ISND">
 						</div>
 						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia1" uk-toggle>
+							<a href="#materia-sis<%= iterador %>" uk-toggle>
 								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
 									<%=materia.nombre%></h3>
 							</a>
 						</div>
 					</div>
-					<div id="materia1" uk-modal>
+					<div id="materia-sis<%= iterador %>" uk-modal>
 						<div class="uk-modal-dialog">
 							<button class="uk-modal-close-outside" type="button" uk-close></button>
 							<div class="uk-modal-header">
@@ -104,20 +104,20 @@
 			<h3 class="uk-text-bold uk-margin-left uk-margin-right uk-text-center uk-text-left@s" id="materias">Negocios
 				Digitales y Administración</h3>
 			<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true; parallax: 90">
-				<%materias["negocios"].forEach((materia)=>{%>
+				<%materias["negocios"].forEach((materia, iterador)=>{%>
 				<div>
 					<div class="uk-card uk-card-default">
 						<div class="uk-card-media-top">
 							<img loading="lazy" src="<%=materia.imagen%>" alt="Materia Bloque Negocios ISND">
 						</div>
 						<div class="uk-card-body uk-text-center uk-padding-small">
-							<a href="#materia21" uk-toggle>
+							<a href="#materia-neg<%= iterador %>" uk-toggle>
 								<h3 class="uk-card-title uk-text-small uk-text-bold uk-margin-remove-bottom">
 									<%=materia.nombre%></h3>
 							</a>
 						</div>
 					</div>
-					<div id="materia21" uk-modal>
+					<div id="materia-neg<%= iterador %>" uk-modal>
 						<div class="uk-modal-dialog">
 							<button class="uk-modal-close-outside" type="button" uk-close></button>
 							<div class="uk-modal-header">
