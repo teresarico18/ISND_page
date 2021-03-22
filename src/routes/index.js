@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 const Materia = require("../models/Materia");
 const MateriaController = require("../controllers/MateriaController");
 const EgresadoController = require("../controllers/EgresadoController");
+const IestudevsController = require("../controllers/IestudevsController");
 
 router.get("/", async (req, res) => {
   const noticias = await NoticiaController.sendLatestNoticias();
@@ -33,5 +34,10 @@ router.get("/nosotros", async (req, res) => {
 router.get("/proyectos", (req, res) => {
   res.render("proyectos");
 });
+
+/** IESTUDEVS SECTION */
+router.get("/iestudevs/projects", IestudevsController.fetchProjects);
+router.post("/iestudevs/projects", IestudevsController.uploadProject);
+
 
 module.exports = router;
