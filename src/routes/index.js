@@ -38,6 +38,7 @@ router.get("/proyectos", (req, res) => {
 /** IESTUDEVS SECTION */
 router.get("/iestudevs/projects", IestudevsController.fetchProjects);
 router.post("/iestudevs/projects", IestudevsController.uploadProject);
+router.get("/iestudevs/projects/:id", IestudevsController.getProjectById);
 
 
 module.exports = router;

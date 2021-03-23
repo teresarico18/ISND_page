@@ -30,6 +30,17 @@ module.exports = {
             return res.status(400);
         }
     },
+    async getProjectById(req,res){
+        const projectId = req.params.id;
+        const project = await IestudevsProject.findOne({_id : projectId});
+        if(project){
+            return res.status(200).json(project);
+        }
+        else{
+            return res.status(300).json({"UPS!" : "SOMETHING WHEN WRONG"});
+        }
+
+    },
     async uptadeProject(req,res){
 
     },
